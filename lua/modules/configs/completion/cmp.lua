@@ -55,22 +55,6 @@ return function()
 				border = border("CmpDocBorder"),
 			},
 		},
-		sorting = {
-			priority_weight = 2,
-			comparators = {
-				require("copilot_cmp.comparators").prioritize,
-				require("copilot_cmp.comparators").score,
-				-- require("cmp_tabnine.compare"),
-				compare.offset,
-				compare.exact,
-				compare.lsp_scores,
-				require("cmp-under-comparator").under,
-				compare.kind,
-				compare.sort_text,
-				compare.length,
-				compare.order,
-			},
-		},
 		formatting = {
 			fields = { "kind", "abbr", "menu" },
 			format = function(entry, vim_item)
@@ -88,9 +72,9 @@ return function()
 		-- You can set mappings if you want
 		mapping = cmp.mapping.preset.insert({
 			["<CR>"] = cmp.mapping.confirm({ select = true }),
-			["<C-p>"] = cmp.mapping.select_prev_item(),
-			["<C-n>"] = cmp.mapping.select_next_item(),
-			["<C-d>"] = cmp.mapping.scroll_docs(-4),
+			["<C-k>"] = cmp.mapping.select_prev_item(),
+			["<C-j>"] = cmp.mapping.select_next_item(),
+			["<C-b>"] = cmp.mapping.scroll_docs(-4),
 			["<C-f>"] = cmp.mapping.scroll_docs(4),
 			["<C-e>"] = cmp.mapping.close(),
 			["<Tab>"] = cmp.mapping(function(fallback)
@@ -129,7 +113,6 @@ return function()
 			{ name = "orgmode" },
 			{ name = "buffer" },
 			{ name = "latex_symbols" },
-			{ name = "copilot" },
 			-- { name = "codeium" },
 			-- { name = "cmp_tabnine" },
 		},

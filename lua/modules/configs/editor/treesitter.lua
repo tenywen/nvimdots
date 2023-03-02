@@ -9,11 +9,9 @@ return function()
 			"bash",
 			"c",
 			"cpp",
-			"css",
 			"go",
 			"gomod",
 			"help",
-			"html",
 			"javascript",
 			"json",
 			"latex",
@@ -23,8 +21,6 @@ return function()
 			"markdown_inline",
 			"python",
 			"rust",
-			"typescript",
-			"vue",
 			"yaml",
 		},
 		highlight = {
@@ -69,11 +65,6 @@ return function()
 					["[M"] = "@class.outer",
 				},
 			},
-		},
-		rainbow = {
-			enable = true,
-			extended_mode = true, -- Highlight also non-parentheses delimiters, boolean or table: lang -> boolean
-			max_file_lines = 2000, -- Do not enable for files with more than 2000 lines, int
 		},
 		context_commentstring = { enable = true, enable_autocmd = false },
 		matchup = { enable = true },

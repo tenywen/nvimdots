@@ -25,8 +25,8 @@ local plug_map = {
 		:with_noremap()
 		:with_silent()
 		:with_desc("lsp: Signature help"),
-	["n|gr"] = map_cr("Lspsaga rename"):with_noremap():with_silent():with_desc("lsp: Rename in file range"),
-	["n|gR"] = map_cr("Lspsaga rename ++project")
+	["n|rn"] = map_cr("Lspsaga rename"):with_noremap():with_silent():with_desc("lsp: Rename in file range"),
+	["n|Rn"] = map_cr("Lspsaga rename ++project")
 		:with_noremap()
 		:with_silent()
 		:with_desc("lsp: Rename in project range"),
@@ -35,7 +35,7 @@ local plug_map = {
 	["v|ga"] = map_cu("Lspsaga code_action"):with_noremap():with_silent():with_desc("lsp: Code action for range"),
 	["n|gd"] = map_cr("Lspsaga peek_definition"):with_noremap():with_silent():with_desc("lsp: Preview definition"),
 	["n|gD"] = map_cr("Lspsaga goto_definition"):with_noremap():with_silent():with_desc("lsp: Goto definition"),
-	["n|gh"] = map_cr("Lspsaga lsp_finder"):with_noremap():with_silent():with_desc("lsp: Show reference"),
+	["n|gr"] = map_cr("Lspsaga lsp_finder"):with_noremap():with_silent():with_desc("lsp: Show reference"),
 	["n|<leader>ci"] = map_cr("Lspsaga incoming_calls")
 		:with_noremap()
 		:with_silent()

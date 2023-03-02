@@ -25,7 +25,6 @@ return function()
 		},
 		buftype_exclude = { "terminal", "nofile" },
 		show_trailing_blankline_indent = false,
-		show_current_context = true,
 		context_patterns = {
 			"^if",
 			"^table",
@@ -42,6 +41,6 @@ return function()
 			"var",
 			"while",
 		},
-		space_char_blankline = " ",
+        space_char_blankline = " ",
 	})
 end
